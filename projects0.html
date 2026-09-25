@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Romeo T. Casta Jr.</title>
+<meta name="description" content="Projects by Romeo T. Casta Jr., web developer and IT enthusiast.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  /* Page-specific additions for projects.html — same banner pattern as
+     experience.html, so the two pages feel like one system. */
+
+  .exp-banner {
+    position: relative;
+    margin: 0 clamp(1.5rem, 5vw, 4rem);
+    margin-top: 1.5rem;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: var(--surface);
+    aspect-ratio: 16 / 6;
+    max-width: 900px;
+  }
+  .exp-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  /* Placeholder state — remove .exp-banner-placeholder and the <div> below
+     once you drop in a real <img> */
+  .exp-banner-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    color: var(--text-muted);
+    background:
+      repeating-linear-gradient(
+        135deg,
+        var(--surface),
+        var(--surface) 10px,
+        #131a1d 10px,
+        #131a1d 20px
+      );
+  }
+  .exp-banner-placeholder svg {
+    width: 34px;
+    height: 34px;
+    stroke: var(--accent);
+    opacity: 0.8;
+  }
+  .exp-banner-placeholder span {
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+  }
+  .exp-banner-tag {
+    position: absolute;
+    top: 0.9rem;
+    left: 0.9rem;
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    color: var(--accent);
+    background: rgba(15, 20, 23, 0.75);
+    border: 1px solid var(--line);
+    padding: 0.3rem 0.6rem;
+    border-radius: 3px;
+    letter-spacing: 0.02em;
+  }
+
+  .exp-header {
+    padding: 2.25rem clamp(1.5rem, 5vw, 4rem) 0;
+    max-width: 900px;
+  }
+  .exp-back {
+    display: inline-block;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
+    transition: color 0.15s ease;
+  }
+  .exp-back:hover { color: var(--accent); }
+  .exp-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    margin: 0 0 0.5rem;
+    font-weight: 700;
+  }
+  .exp-header p {
+    color: var(--text-muted);
+    margin: 0;
+    max-width: 55ch;
+  }
+</style>
+</head>
+<body>
+
+<div class="progress-rail" aria-hidden="true"><div class="progress-fill" id="scrollFill"></div></div>
+
+<header class="nav">
+  <a href="index.html" class="nav-mark">RC</a>
+  <nav>
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Banner photo slot — replace the placeholder div with a real <img>
+       when you're ready:
+       <img src="images/projects-banner.jpg" alt="Describe the photo here"> -->
+  <div class="exp-banner">
+    <span class="exp-banner-tag">Photo placeholder</span>
+    <div class="exp-banner-placeholder">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+        <circle cx="8.5" cy="10" r="1.5"></circle>
+        <path d="M21 16l-5-5-4 4-3-3-6 6"></path>
+      </svg>
+      <span>1600 × 600 recommended</span>
+    </div>
+  </div>
+
+  <div class="exp-header">
+    <a href="index.html#projects" class="exp-back">&larr; Back to home</a>
+    <h1>Projects</h1>
+    <p>A closer look at what I've built, or what's currently in motion.</p>
+  </div>
+
+  <section class="section projects" style="border-top: none;">
+    <div class="project-empty">
+      <p class="project-empty-label">In progress</p>
+      <p class="project-empty-text">
+        Nothing posted yet — the first project is still in motion.
+        Check back soon, or watch the GitHub profile linked from the homepage.
+      </p>
+    </div>
+
+    <!--
+      When your first project is ready, delete the .project-empty block above
+      and add cards like this instead (reuses the .project-card style already
+      defined in css/style.css):
+
+      <div class="project-card">
+        <h3>Project Name</h3>
+        <p>One or two sentences on what it does and what you used.</p>
+        <a href="https://github.com/your-username/project-repo">View on GitHub →</a>
+      </div>
+    -->
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Romeo T. Casta Jr. — built with HTML, CSS &amp; JS.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

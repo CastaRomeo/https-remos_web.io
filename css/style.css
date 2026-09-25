@@ -261,3 +261,19 @@ button:focus-visible {
   .progress-fill { transition: none; }
   .hero-cta { transition: none; }
 }
+
+.experience-date a {
+  color: var(--text);
+  text-decoration: none;
+}
+.experience-date a:hover {
+  color: var(--accent);
+}
+
+.Solar set up a {
+  color: var(--text);
+  text-decoration: none;
+}
+.Solar set up a:hover{
+  color: var(--accent);
+}

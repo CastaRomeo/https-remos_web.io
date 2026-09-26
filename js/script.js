@@ -12,3 +12,24 @@ function updateProgress() {
 window.addEventListener('scroll', updateProgress);
 window.addEventListener('resize', updateProgress);
 updateProgress();
+// Theme toggle — remembers choice across visits via localStorage
+const themeToggle = document.getElementById('themeToggle');
+const root = document.documentElement;
+const savedTheme = localStorage.getItem('theme');
+
+if (savedTheme === 'light') {
+  root.setAttribute('data-theme', 'light');
+}
+
+if (themeToggle) {
+  themeToggle.addEventListener('click', () => {
+    const isLight = root.getAttribute('data-theme') === 'light';
+    if (isLight) {
+      root.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      root.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+    }
+  });
+}

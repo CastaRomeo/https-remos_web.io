@@ -23,19 +23,34 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li></li>
+      <li>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </button>
+      </li>
     </ul>
   </nav>
 </header>
 
 <main>
-
+  
   <section id="top" class="hero">
+  <div class="hero-text">
     <p class="hero-kicker">Web Developer &amp; IT Enthusiast</p>
     <h1 class="hero-name">Romeo T.<br>Casta Jr.</h1>
     <p class="hero-line">Test the limit, and keep moving forward.</p>
     <a href="#projects" class="hero-cta">See what I'm building</a>
-  </section>
+  </div>
+  <div class="hero-photo">
+    <img src="images/4.png" alt="Romeo T. Casta Jr.">
+  </div>
+</section>
 
   <section id="about" class="section about">
     <h2 class="section-title">About</h2>
@@ -81,17 +96,8 @@
       <p class="project-empty-label">In progress</p>
       <p class="project-empty-text">
         <h3><a href="projects0.html">Solar set up</a></h3>
-        <p>Setting up a small solar power system for my home.</p>
+        <p class="project-empty-text">Setting up a small solar power system for my home.</p>
       </p>
-      <!--
-        When your first project is ready, replace this block with cards like:
-
-        <div class="project-card">
-          <h3>Project Name</h3>
-          <p>One or two sentences on what it does and what you used.</p>
-          <a href="https://github.com/your-username/project-repo">View on GitHub →</a>
-        </div>
-      -->
     </div>
   </section>
 
@@ -102,9 +108,10 @@
       <p class="experience-date"><a href="experience1.html">Feb 2026 - June 2026</a></p>
       <p class="experience-description"> IT Intern — LGU Aguilar HRMO.</p>
     </div>
+    <div class="experience-item">
       <h3>SPES Associate</h3>
       <p class="experience-date"><a href="experience.html">Sep 6, 2025 - Aug 29, 2025</a></p>
-      <p class="experience-description">Working at McDonald's under the SPES program, carrying out assigned tasks and providing quality customer service.</p>
+      <p class="experience-description">Working at McDonald's under the SPES program.</p>
     </div>
   </section>
 
